@@ -473,14 +473,6 @@ hr {
   border-radius: 20px;
 }
 
-.atr-portal-municipios {
-  grid-column: span 5;
-  grid-row: span 2;
-}
-.atr-verao-atarde {
-  grid-column: span 5;
-  grid-row: span 2;
-}
 #topic1 {
   grid-column: span 5;
   background-image: url("./assets/public/images/ads1.png");
@@ -706,60 +698,317 @@ hr {
 
 #topic8 {
   grid-column: span 2;
+  box-shadow: 0px 10px 20px #0000000d;
+  padding: 20px;
 }
-#teste9 {
+.topic-8-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
-#teste10 {
+.mega-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-#teste11 {
+.mega-title h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 21px;
 }
-#teste12 {
+.mega-title time {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 14px;
 }
-#teste13 {
+.mega-results li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d88c;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.mega-results ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.mega-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mega-value span {
+  color: #646464;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.mega-value ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mega-value button {
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  padding: 0px;
+  background-color: #ccc;
+  margin: 3px;
+}
+#active-button {
+  background-color: #3e88d7 !important;
+  height: 10px !important;
+  width: 10px !important;
+}
+/* ---------------atr municipios -------------- */
+
+.atr-portal-municipios {
+  display: grid;
+  grid-column: span 5;
+  grid-row: span 2;
+  width: 100%;
+  grid-template-columns: repeat(5, 20%);
+  margin-top: 30px;
+  border: 1px solid red;
 }
 
-#teste14 {
+.atr-portal-municipios-wrapper {
+  grid-column: span 5;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.atr-portal-municipios-img {
+  border-radius: 20px;
+}
+
+.divider {
+  margin-left: 50px;
+  width: 100%;
+  height: 0px;
+  border: 1px solid #d4d4d4;
+}
+
+/* ---------atr verao atarde---------- */
+.atr-verao-atarde {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+.atr-verao-atarde article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.atr-verao-atarde div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  gap: 20px;
+  margin-top: 20px;
+}
+.atr-verao-atarde div > article {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 100%;
+  position: relative;
+  justify-content: flex-end;
+}
+.atr-verao-atarde h4 {
+  padding: 20px;
+  z-index: 1;
+}
+.atr-verao-atarde div > article:nth-child(1) {
+  background-image: url("./assets/public/images/atardeverão.png");
+  border-radius: 20px;
+}
+.atr-verao-atarde div > article:nth-child(2) {
+  background-image: url("./assets/public/images/atardeverão-1.png");
+  border-radius: 20px;
+}
+.atr-verao-atarde div > article:nth-child(3) {
+  background-image: url("./assets/public/images/atardeverão-2.png");
+  border-radius: 20px;
+}
+.atr-verao-atarde div > article:nth-child(4) {
+  background-image: url("./assets/public/images/atardeverão-3.png");
+  border-radius: 20px;
+}
+.atr-verao-buttons {
+  display: flex !important;
+  justify-content: center;
+}
+.atr-verao-buttons ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.atr-verao-buttons button {
+  border: 1px solid #efae63;
+  border-radius: 50%;
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  padding: 0px;
+  background-color: transparent;
+  margin: 10px;
+}
+#atr-verao-active-button {
+  height: 16px;
+  width: 16px;
+  background-color: #efae63;
+}
+
+.atr-verao-wrapper {
+}
+/* ---------------topic 9-------------------- */
+#topic9 {
   grid-column: span 3;
   grid-row: span 2;
 }
-#teste15 {
+
+.topic-9-wrapper {
+  background-image: url("./assets/public/images/chamadaCarrossel1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+.topic-9-wrapper h4,
+.topic-9-wrapper span {
+  margin-left: 42px;
+  z-index: 1;
+}
+.topic-9-wrapper span {
+  margin-bottom: 20px;
+}
+.big-subtitle-white {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 32px;
+  color: white;
+  margin-top: 10px;
+}
+.pagination {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 630px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+.pagination li {
+  width: 100%;
+  height: 5px;
+}
+.pagination-active-button-grey {
+  background-color: #646464 !important;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  height: 5px;
+}
+.pagination-nonactive-button-grey {
+  background-color: #64646469;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  height: 4px;
+}
+/* -------------topic 10----------------- */
+#topic10 {
   grid-column: span 2;
+  box-shadow: 0px 10px 20px #0000000d;
+  padding: 20px;
 }
-#teste16 {
+
+.atr-weather-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-#teste17 {
+.atr-weather-title h4 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
 }
-#teste18 {
+.atr-weather-title figure {
+  margin-left: 3px;
+}
+.atr-weather-title p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #3e88d7;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.atr-weather-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+/* -------------topic 11----------------- */
+
+#topic11 {
+}
+#topic12 {
+}
+#topic13 {
   grid-column: span 3;
 }
-#teste19 {
+#topic14 {
   grid-column: span 2;
   grid-row: span 2;
 }
-#teste20 {
+#topic15 {
   grid-column: span 3;
 }
-#teste21 {
+#topic16 {
   grid-column: span 3;
 }
-#teste22 {
+#topic17 {
   grid-column: span 2;
   grid-row: span 2;
 }
-#teste23 {
+#topic18 {
   grid-column: span 3;
 }
-#teste24 {
+#topic19 {
   grid-column: span 3;
 }
-#teste25 {
+#topic20 {
   grid-column: span 2;
   grid-row: span 3;
 }
-#teste26 {
+#topic21 {
   grid-row: span 2;
 }
-#teste27 {
+#topic22 {
   grid-column: span 2;
   grid-row: span 2;
 }
