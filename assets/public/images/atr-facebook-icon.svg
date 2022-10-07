@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="icon_facebook" transform="translate(-965 -6557)">
+    <g id="Retângulo_207" data-name="Retângulo 207" transform="translate(965 6557)" fill="none" stroke="#3e88d7" stroke-width="2">
+      <rect width="38" height="38" rx="19" stroke="none"/>
+      <rect x="1" y="1" width="36" height="36" rx="18" fill="none"/>
+    </g>
+    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M11.322,10.916,11.861,7.4H8.491V5.125a1.756,1.756,0,0,1,1.98-1.9H12V.237A18.682,18.682,0,0,0,9.283,0C6.508,0,4.694,1.682,4.694,4.727V7.4H1.609v3.512H4.694v8.49h3.8v-8.49Z" transform="translate(977.461 6566.283)" fill="none" stroke="#3e88d7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
