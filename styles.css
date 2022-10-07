@@ -131,7 +131,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 hr {
-  border: 2px solid #fafafa;
+  border: 1px solid #fafafa;
 }
 .atr-header {
   max-width: 1200px;
@@ -151,12 +151,16 @@ hr {
   text-transform: uppercase;
   justify-content: space-around;
 }
+
 .atr-menu img {
   width: 30px;
   height: 30px;
 }
 .atr-menu span {
   margin-left: 5px;
+  color: #3e88d7;
+  font-size: 12px;
+  line-height: 13px;
 }
 .atr-searchbar {
   height: 23px;
@@ -174,9 +178,20 @@ hr {
   outline: none;
   border: none;
 }
+.left-side-menu,
+.right-side-menu {
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .atr-assinatura a,
-.atr-fale-conosco a {
+.atr-fale-conosco a,
+.atr-comercial a {
+  font-size: 14px;
+  line-height: 16px;
   text-decoration: none;
   color: #3e88d7;
   text-transform: capitalize;
@@ -190,9 +205,16 @@ hr {
   height: 63px;
 }
 .atr-navbar ul {
+  font-size: 13px;
+  line-height: 14px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
+}
+.atr-navbar li {
+  margin: 3px;
+  color: #6c6c6c;
 }
 .atr-navbar a {
   text-decoration: none;
@@ -807,6 +829,9 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.card-municipio {
+  margin-top: 20px;
 }
 .atr-portal-municipios-img {
   border-radius: 20px;
@@ -1732,25 +1757,45 @@ hr {
   border: 1px solid red;
 }
 
-/* -------------mobile----------------- */
+/* #######################################################################  MOBIlE   #####################################################################################*/
 
 @media (max-width: 992px) {
   .atr-menu,
   .atr-searchbar,
   .atr-fale-conosco,
   .atr-assinatura,
-  .atr-logo-wrapper {
+  .atr-logo-wrapper,
+  .atr-comercial {
     display: none;
   }
-  .atr-header {
-    max-width: 335px;
+  .atr-header,
+  .atr-main {
+    width: 335px;
+  }
+  .atr-header-wrapper {
+    display: block;
+    height: 100%;
+  }
+  .atr-main {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .bloco1 {
+    display: flex;
+    flex-direction: column;
+  } */
+  .topic {
+    max-height: 100%;
   }
   .atr-menu-mobile {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
+  /* .atr-menu-mobile div {
+    width: 100%;
+  } */
   .atr-navbar {
     overflow: auto;
     white-space: no-wrap;
@@ -1825,5 +1870,234 @@ hr {
   .atr-bottom-footer2 figure,
   .atr-bottom-footer3 figure {
     fill: white;
+  }
+  /* ------------topics------------- */
+  #topic1,
+  #topic23 {
+    height: 100px;
+    grid-column: span 2;
+  }
+  .bloco1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #topic2,
+  #topic40,
+  #topic41 {
+    height: 314px;
+    max-height: 100%;
+  }
+  #topic3 {
+    height: 289px;
+    max-height: 100%;
+  }
+
+  #topic3 div > h4 {
+    margin-left: 20px;
+  }
+  #topic3 ul {
+    max-width: 290px;
+  }
+  /*  */
+
+  .topic-5-wrapper {
+    background-image: url("./assets/public/images/chamadaBox4.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 222px;
+    max-height: 100%;
+    border-radius: 20px;
+    position: relative;
+  }
+  #topic6 {
+    display: flex;
+    flex-direction: row;
+  }
+  #topic6 img {
+    max-width: 100%;
+    height: 100%;
+  }
+  #topic7 {
+    height: 289px;
+    max-height: 100%;
+  }
+  .topic-7-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #topic8 {
+    height: 163px;
+  }
+  #topic8 h4 {
+    margin-left: 0;
+  }
+  .mega-results li {
+    width: 42px;
+    height: 42px;
+  }
+
+  .atr-portal-municipios {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  .atr-portal-municipios article {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  .atr-portal-municipios img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .divider {
+    display: none;
+  }
+  .atr-verao-atarde {
+    display: flex;
+    flex-direction: column;
+  }
+  .atr-verao-atarde div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
+  }
+  .atr-verao-atarde div article {
+    margin-top: 10px;
+    width: 244px;
+    max-width: 100%;
+  }
+  /* topic 9 */
+  #topic9,
+  #topic24 {
+    height: 289px;
+    max-height: 100%;
+  }
+  .topic-3-wrapper h4,
+  .topic-3-wrapper span,
+  .topic-9-wrapper h4,
+  .topic-24-wrapper h4,
+  .topic-9-wrapper span,
+  .topic-24-wrapper span {
+    margin-left: 20px;
+    z-index: 1;
+  }
+
+  #topic9 div > h4 {
+    margin-left: 20px;
+  }
+  #topic9 ul,
+  #topic24 ul {
+    max-width: 290px;
+  }
+  #topic13,
+  #topic15,
+  #topic16,
+  #topic18,
+  #topic19 {
+    flex-direction: column;
+  }
+  #topic13 img,
+  #topic15 img,
+  #topic16 img,
+  #topic18 img,
+  #topic19 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* cinesite */
+  #topic17 {
+  }
+  .atr-cinesite-wrapper {
+  }
+  .atr-cinesite-content {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .atr-cinesite-content div {
+    width: 160px;
+  }
+  .atr-estreia-1 {
+    margin-right: 20px;
+  }
+
+  .atr-cinesite-content img {
+    display: none;
+  }
+  /* topic 21 */
+  #topic21 {
+    background-size: cover;
+  }
+  .topic-25-wrapper,
+  .topic-26-wrapper {
+    height: 222px;
+    background-size: cover;
+  }
+  #topic27 {
+    height: 340px;
+  }
+  #topic30 {
+    height: 310px;
+  }
+  .atr-colunistas-perfil div {
+    width: 157px;
+  }
+  .atr-colunistas {
+    margin-bottom: 20px;
+  }
+  #topic31,
+  #topic32,
+  #topic33,
+  #topic34,
+  #topic35,
+  #topic36 {
+    background-size: cover;
+    background-position: center;
+  }
+  #topic37 {
+    height: 175px;
+    align-items: center;
+  }
+  .atr-topic-37-content {
+    width: 120px;
+  }
+  .atr-topic-37-content span {
+    margin: 10px 0;
+  }
+  #topic13 figcaption,
+  #topic15 figcaption,
+  #topic16 figcaption,
+  #topic18 figcaption,
+  #topic19 figcaption {
+    padding: 20px 0;
+  }
+  .topic-40-wrapper,
+  .topic-41-wrapper {
+    background-size: cover;
+  }
+  .atr-btn {
+    margin-top: 20px;
+  }
+  #topic42 label {
+    justify-content: flex-start;
+  }
+  #topic44 div {
+  }
+  #topic44 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #topic45 img,
+  #topic46 img,
+  #topic47 img,
+  #topic48 img,
+  #topic49 img {
+    width: 100%;
+    margin-top: 10px;
   }
 }
