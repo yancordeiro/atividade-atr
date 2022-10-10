@@ -127,6 +127,7 @@ table {
 .atr-menu-mobile {
   display: none;
 }
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -254,7 +255,7 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.atr-top-footer1 h4 {
+.atr-top-footer1 h2 {
   font-size: 18px;
   color: #3e88d7;
   font-weight: bold;
@@ -308,7 +309,7 @@ hr {
   width: 100%;
   height: 100%;
 }
-.atr-top-footer2 h4 {
+.atr-top-footer2 h2 {
   font-size: 18px;
   color: #3e88d7;
   font-weight: bold;
@@ -336,7 +337,7 @@ hr {
   width: 100%;
   height: 100%;
 }
-.atr-top-footer3 h4 {
+.atr-top-footer3 h2 {
   font-size: 18px;
   color: #3e88d7;
   font-weight: bold;
@@ -369,7 +370,7 @@ hr {
   grid-template-rows: auto;
   row-gap: 15px;
 }
-.atr-top-footer4-content h4 {
+.atr-top-footer4-content h2 {
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -479,8 +480,9 @@ hr {
 }
 .atr-main {
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: #f5f5f5;
+  border-radius: 20px;
 }
 .bloco1 {
   display: grid;
@@ -531,18 +533,18 @@ hr {
   border-radius: 20px;
   z-index: 0;
 }
-.topic-2-wrapper h4,
-.topic-2-wrapper span,
-.topic-40-wrapper h4,
-.topic-40-wrapper span,
-.topic-41-wrapper h4,
-.topic-41-wrapper span {
+.topic-2-wrapper h3,
+.topic-2-wrapper h2,
+.topic-40-wrapper h2,
+.topic-40-wrapper h3,
+.topic-41-wrapper h2,
+.topic-41-wrapper h3 {
   margin-left: 20px;
   z-index: 1;
 }
-.topic-2-wrapper span,
-.topic-40-wrapper span,
-.topic-41-wrapper span {
+.topic-2-wrapper h2,
+.topic-40-wrapper h2,
+.topic-41-wrapper h2 {
   margin-bottom: 20px;
 }
 
@@ -585,12 +587,12 @@ hr {
   position: relative;
   z-index: 1;
 }
-.topic-3-wrapper h4,
-.topic-3-wrapper span {
+.topic-3-wrapper h3,
+.topic-3-wrapper h2 {
   margin-left: 42px;
   z-index: 1;
 }
-.topic-3-wrapper span {
+.topic-3-wrapper h2 {
   margin-bottom: 20px;
 }
 .big-subtitle-white {
@@ -679,19 +681,19 @@ hr {
   border-radius: 20px;
   position: relative;
 }
-.topic-5-wrapper span,
-.topic-25-wrapper span,
-.topic-26-wrapper span,
-.topic-5-wrapper h4,
-.topic-25-wrapper h4,
-.topic-26-wrapper h4 {
+.topic-5-wrapper h2,
+.topic-25-wrapper h2,
+.topic-26-wrapper h2,
+.topic-5-wrapper h3,
+.topic-25-wrapper h3,
+.topic-26-wrapper h3 {
   margin-left: 20px;
   margin-right: 20px;
   z-index: 1;
 }
-.topic-5-wrapper span,
-.topic-25-wrapper span,
-.topic-26-wrapper span {
+.topic-5-wrapper h2,
+.topic-25-wrapper h2,
+.topic-26-wrapper h2 {
   margin-bottom: 20px;
 }
 
@@ -727,12 +729,12 @@ hr {
   border-radius: 20px;
   position: relative;
 }
-.topic-7-wrapper span,
-.topic-7-wrapper h4 {
+.topic-7-wrapper h2,
+.topic-7-wrapper h3 {
   margin-left: 20px;
   z-index: 1;
 }
-.topic-7-wrapper span {
+.topic-7-wrapper h2 {
   margin-bottom: 20px;
 }
 /* ---------------topic 8 -------------- */
@@ -754,7 +756,7 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-.mega-title h4 {
+.mega-title h2 {
   font-size: 18px;
   font-weight: bold;
   text-transform: capitalize;
@@ -858,6 +860,7 @@ hr {
 .atr-verao-atarde {
   grid-column: span 5;
   grid-row: span 2;
+  margin-top: 30px;
 }
 .atr-verao-atarde article {
   display: flex;
@@ -879,7 +882,7 @@ hr {
   position: relative;
   justify-content: flex-end;
 }
-.atr-verao-atarde h4 {
+.atr-verao-atarde h2 {
   padding: 20px;
   z-index: 1;
 }
@@ -944,15 +947,16 @@ hr {
   position: relative;
   z-index: 1;
 }
-.topic-9-wrapper h4,
-.topic-24-wrapper h4,
-.topic-9-wrapper span,
-.topic-24-wrapper span {
+.topic-9-wrapper h3,
+.topic-24-wrapper h3,
+.topic-9-wrapper h2,
+.topic-24-wrapper h2 {
+  margin-right: 20px;
   margin-left: 42px;
   z-index: 1;
 }
-.topic-9-wrapper span,
-.topic-24-wrapper span {
+.topic-9-wrapper h2,
+.topic-24-wrapper h2 {
   margin-bottom: 20px;
 }
 .big-subtitle-white {
@@ -1004,7 +1008,7 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-.atr-weather-title h4 {
+.atr-weather-title h2 {
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
@@ -1083,7 +1087,7 @@ hr {
   padding: 20px;
   justify-content: space-between;
 }
-#topic11 h4 {
+#topic11 h2 {
   font-size: 18px;
   font-weight: bold;
   color: #343434;
@@ -1124,7 +1128,7 @@ hr {
   padding: 20px;
   justify-content: space-between;
 }
-#topic12 h4 {
+#topic12 h2 {
   font-size: 18px;
   font-weight: bold;
   color: #343434;
@@ -1261,7 +1265,7 @@ hr {
   padding: 20px;
   box-shadow: 0px 10px 20px #0000000d;
 }
-#topic20 h4 {
+#topic20 h2 {
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
@@ -1272,7 +1276,7 @@ hr {
   flex-direction: row;
   align-items: center;
 }
-#topic20 div > span {
+#topic20 div > h3 {
   font-size: 90px;
   line-height: 104px;
   font-weight: bold;
@@ -1347,12 +1351,12 @@ hr {
   height: 100%;
   justify-content: space-between;
 }
-.topic-21-content h4,
-.topic-31-content h4,
-.topic-32-content h4,
-.topic-33-content h4,
-.topic-34-content h4,
-.topic-35-content h4 {
+.topic-21-content h3,
+.topic-31-content h3,
+.topic-32-content h3,
+.topic-33-content h3,
+.topic-34-content h3,
+.topic-35-content h3 {
   margin-top: 20px;
   z-index: 1;
 }
@@ -1364,13 +1368,15 @@ hr {
 .topic-35-wrapper div {
   display: flex;
 }
-.topic-21-wrapper p,
-.topic-31-wrapper p,
-.topic-32-wrapper p,
-.topic-33-wrapper p,
-.topic-34-wrapper p,
-.topic-35-wrapper p {
+.topic-21-wrapper h2,
+.topic-31-wrapper h2,
+.topic-32-wrapper h2,
+.topic-33-wrapper h2,
+.topic-34-wrapper h2,
+.topic-35-wrapper h2 {
   margin-top: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
   text-align: center;
   font-size: 18px;
   line-height: 24px;
@@ -1413,8 +1419,7 @@ hr {
 }
 
 /* -------------topic 23----------------- */
-#topic23,
-#topic50 {
+#topic23 {
   background-color: #e2e2e2;
   grid-column: span 5;
   display: flex;
@@ -1469,13 +1474,13 @@ hr {
   text-align: center;
   box-shadow: 0px 10px 20px #0000000d;
 }
-#topic27 h4 {
+#topic27 h3 {
   color: #3e88d7;
   font-size: 18px;
   font-weight: bold;
   line-height: 21px;
 }
-#topic27 span {
+#topic27 h2 {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -1636,7 +1641,7 @@ hr {
   flex-direction: column;
   box-shadow: 10px 0px 10px 10px #0000000d;
 }
-#topic42 h4 {
+#topic42 h2 {
   color: #343434;
   font-size: 18px;
   line-height: 21px;
@@ -1719,14 +1724,14 @@ hr {
   justify-content: space-between;
   height: 100%;
 }
-#topic44 h4 {
+#topic44 h3 {
   color: #343434;
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
   text-transform: capitalize;
 }
-#topic44 span {
+#topic44 h2 {
   width: 100%;
   max-width: 160px;
   color: #646464;
@@ -1749,11 +1754,11 @@ hr {
   display: flex;
   flex-direction: column;
 }
-#topic45 h4,
-#topic46 h4,
-#topic47 h4,
-#topic48 h4,
-#topic49 h4 {
+#topic45 h3,
+#topic46 h3,
+#topic47 h3,
+#topic48 h3,
+#topic49 h3 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -1768,9 +1773,6 @@ hr {
 }
 
 /* -------------topic 50----------------- */
-#topic50 {
-  grid-column: span 5;
-}
 
 /* #######################################################################  MOBIlE   #####################################################################################*/
 
@@ -1829,7 +1831,7 @@ hr {
     max-width: 335px;
     margin: 0 auto;
   }
-  .atr-top-footer1-content h4 {
+  .atr-top-footer1-content h2 {
     font-size: 16px;
     line-height: 40px;
     font-weight: 500;
@@ -1997,9 +1999,9 @@ hr {
   .topic-3-wrapper h4,
   .topic-3-wrapper span,
   .topic-9-wrapper h4,
-  .topic-24-wrapper h4,
+  .topic-24-wrapper h3,
   .topic-9-wrapper span,
-  .topic-24-wrapper span {
+  .topic-24-wrapper h2 {
     margin-left: 20px;
     z-index: 1;
   }
@@ -2115,6 +2117,19 @@ hr {
   #topic48 img,
   #topic49 img {
     width: 100%;
-    margin-top: 10px;
+  }
+  #topic1 {
+    background-image: url("./assets/public/images/propa1.png");
+    background-position: center;
+  }
+  #topic1 img {
+    display: none;
+  }
+  #topic23 {
+    background-image: url("./assets/public/images/propa4.png");
+    background-position: center;
+  }
+  #topic23 img {
+    display: none;
   }
 }
