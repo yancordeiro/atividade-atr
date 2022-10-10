@@ -409,7 +409,7 @@ hr {
   color: white;
   font-weight: bold;
 }
-.atr-bottom-footer1 h4 {
+.atr-bottom-footer1 h2 {
   font-size: 36px;
   line-height: 51px;
 }
@@ -437,7 +437,7 @@ hr {
   align-items: center;
   margin-top: 10px;
 }
-.atr-bottom-footer2 h4 {
+.atr-bottom-footer2 h2 {
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
@@ -445,7 +445,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.atr-bottom-footer3 h4 {
+.atr-bottom-footer3 h2 {
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
@@ -1245,8 +1245,8 @@ hr {
   max-width: 100%;
   background-image: url("./assets/public/images/cineinsite2.png");
 }
-.atr-estreia-1 h4,
-.atr-estreia-2 h4 {
+.atr-estreia-1 h2,
+.atr-estreia-2 h2 {
   margin: 20px;
 }
 .atr-estreia-2 {
@@ -1503,7 +1503,7 @@ hr {
   grid-row: span 2;
   justify-content: space-between;
 }
-#topic30 h4 {
+#topic30 h2 {
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
@@ -1570,7 +1570,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
 }
-.atr-topic-37-content h4 {
+.atr-topic-37-content h2 {
   font-size: 18px;
   line-height: 21px;
   color: #343434;
