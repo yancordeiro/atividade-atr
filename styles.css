@@ -124,6 +124,9 @@ table {
 }
 
 /* ----------------------------------------------------- */
+.teste-splide {
+  height: 400px;
+}
 .atr-menu-mobile {
   display: none;
 }
@@ -630,12 +633,123 @@ hr {
   color: white;
 }
 /* ---------------topic 3 -------------- */
+/* .slidebg {
+  background-color: red;
+} */
+
+/*  */
+/* .splide__pagination__page {
+  background-color: #3e88d769 !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 0px !important;
+  height: 4px !important;
+  margin: 0px !important;
+  opacity: 1 !important;
+  position: relative;
+  width: 100% !important;
+}
+.splide__pagination__page.is-active {
+  background-color: #3e88d7 !important;
+  transform: none !important;
+}
+.splide__pagination {
+  display: flex !important;
+  flex-direction: row !important;
+  margin-bottom: 15px !important;
+}
+
+.splide__pagination li {
+  width: 30%;
+} */
+
+#topic100 {
+  grid-column: span 3;
+  grid-row: span 2;
+  border-radius: 20px;
+}
+.splidewrapper {
+  height: 100%;
+}
+.topic-100-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+.splide__arrow {
+  outline: none !important;
+}
+#item1 {
+  background-image: url("./assets/public/images/mancheteCarrossel.png");
+}
+#item2 {
+  background-image: url("./assets/public/images/chamadaCarrossel2.png");
+}
+#item3 {
+  background-image: url("./assets/public/images/chamadaCarrossel1.png");
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+.item a::after {
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, #000, transparent);
+  content: "";
+  border-radius: 0 0 20px 20px;
+}
+#item1,
+#item2,
+#item3 {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  gap: 20px;
+}
+
+#item1 h3,
+#item1 h2,
+#item2 h3,
+#item2 h2,
+#item3 h3,
+#item3 h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.topic100style {
+  border-radius: 20px;
+  height: 100%;
+}
+
 #topic3,
 #topic9,
 #topic24 {
   grid-column: span 3;
   grid-row: span 2;
-  background-image: url("./assets/public/images/mancheteCarrossel.png");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -643,6 +757,7 @@ hr {
   flex-direction: column;
   justify-content: flex-end;
 }
+
 #topic3 a::after,
 #topic9 a::after,
 #topic24 a::after {
