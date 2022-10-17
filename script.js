@@ -4,7 +4,7 @@ console.log(elms.length);
 for (var i = 0; i < elms.length; i++) {
   new Splide(elms[i], {
     type: "loop",
-    autoplay: true,
+    autoplay: false,
     interval: 3000,
   }).mount();
 }

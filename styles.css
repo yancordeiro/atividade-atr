@@ -662,6 +662,31 @@ hr {
 .splide__pagination li {
   width: 30%;
 } */
+.big-carousel .splide__pagination li {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+/* .big-carousel .splide_pagination {
+  overflow: hidden;
+} */
+.big-carousel .splide__pagination__page {
+  background-color: #3e88d769;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  height: 4px;
+  margin: 0px;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+}
+
+.big-carousel .splide__pagination__page.is-active {
+  background-color: #3e88d7;
+  transform: none;
+}
 
 #topic100 {
   grid-column: span 3;
@@ -740,7 +765,7 @@ hr {
   z-index: 1;
 }
 
-.topic100style {
+.big-carousel {
   border-radius: 20px;
   height: 100%;
 }
@@ -978,7 +1003,8 @@ hr {
 
 /* ---------------topic 8 -------------- */
 
-#topic8 {
+/* #topic8 {
+
   grid-column: span 2;
   box-shadow: 0px 10px 20px #0000000d;
   padding: 20px;
@@ -1056,6 +1082,137 @@ hr {
   background-color: #3e88d7 !important;
   height: 10px !important;
   width: 10px !important;
+} */
+#topic8 {
+  grid-column: span 2;
+  box-shadow: 0px 10px 20px #0000000d;
+  padding: 20px;
+}
+.topic-8-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.mega-title,
+.quina-title,
+.timemania-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mega-title h2,
+.quina-title h2,
+.timemania-title h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 21px;
+  color: #343434;
+}
+.mega-title time,
+.quina-title time,
+.timemania-title time {
+  color: #343434;
+
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.mega-results li,
+.quina-results li,
+.timemania-results li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.mega-results li {
+  background-color: #25d88c;
+}
+.quina-results li {
+  background-color: #283593;
+}
+.timemania-results li {
+  background-color: #e9e215;
+}
+.mega-results ul,
+.quina-results ul,
+.timemania-results ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.mega-value,
+.quina-value,
+.timemania-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mega-value span,
+.quina-value span,
+.timemania-value span {
+  color: #646464;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 14px;
+}
+/* .mega-value ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+.mega-value button {
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  padding: 0px;
+  background-color: #ccc;
+  margin: 3px;
+}
+#active-button {
+  background-color: #3e88d7 !important;
+  height: 10px !important;
+  width: 10px !important;
+}
+.topic-mega {
+  height: 100%;
+}
+.topic-mega .splide__pagination {
+  left: unset;
+  bottom: 0;
+}
+.topic-mega .splide__pagination__page {
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  padding: 0px;
+  background-color: #ccc;
+}
+.topic-mega .splide__pagination__page.is-active {
+  background-color: #3e88d7;
+  height: 10px;
+  width: 10px;
+}
+.topic-mega .splide__arrow {
+  display: none;
+}
+.mega-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 /* ---------------atr municipios -------------- */
 
