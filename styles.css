@@ -172,7 +172,6 @@ hr {
 }
 .atr-searchbar {
   height: 23px;
-  width: 70px;
   display: flex;
   align-items: center;
   justify-items: space-around;
@@ -186,13 +185,25 @@ hr {
   outline: none;
   border: none;
 }
-.left-side-menu,
-.right-side-menu {
-  width: 300px;
-  max-width: 100%;
+.left-side-menu {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.left-side-menu div {
+  margin: 0 auto 0 0;
+}
+
+.right-side-menu div {
+  margin: 0 0 0 auto;
+}
+
+.right-side-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .atr-assinatura a,
@@ -970,7 +981,7 @@ hr {
 #topic6 img {
   border-radius: 0px 20px 20px 0px;
 }
-#topic6 figcaption {
+#topic6 div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1265,6 +1276,9 @@ hr {
 }
 
 /* ---------atr verao atarde---------- */
+/* slide verao atarde */
+
+/* ------------------ */
 .atr-verao-atarde {
   grid-column: span 5;
   grid-row: span 2;
@@ -1272,6 +1286,10 @@ hr {
 }
 .atr-verao-atarde a {
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .atr-verao-atarde a::after {
   position: absolute;
@@ -1290,7 +1308,7 @@ hr {
   flex-direction: row;
   justify-content: center;
 }
-.atr-verao-atarde div {
+.atr-verao-wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1298,7 +1316,7 @@ hr {
   gap: 20px;
   margin-top: 20px;
 }
-.atr-verao-atarde div > article {
+.atr-verao-wrapper > article {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1310,19 +1328,19 @@ hr {
   padding: 20px;
   z-index: 1;
 }
-.atr-verao-atarde div > article:nth-child(1) {
+.atr-verao-wrapper > article:nth-child(1) {
   background-image: url("./assets/public/images/atardeverão.png");
   border-radius: 20px;
 }
-.atr-verao-atarde div > article:nth-child(2) {
+.atr-verao-wrapper > article:nth-child(2) {
   background-image: url("./assets/public/images/atardeverão-1.png");
   border-radius: 20px;
 }
-.atr-verao-atarde div > article:nth-child(3) {
+.atr-verao-wrapper > article:nth-child(3) {
   background-image: url("./assets/public/images/atardeverão-2.png");
   border-radius: 20px;
 }
-.atr-verao-atarde div > article:nth-child(4) {
+.atr-verao-wrapper > article:nth-child(4) {
   background-image: url("./assets/public/images/atardeverão-3.png");
   border-radius: 20px;
 }
@@ -1350,8 +1368,23 @@ hr {
   width: 16px;
   background-color: #efae63;
 }
-
-.atr-verao-wrapper {
+.atr-verao-atarde .splide__pagination__page {
+  border: 1px solid #efae63;
+  border-radius: 50%;
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  padding: 0px;
+  background-color: transparent;
+}
+.atr-verao-atarde .splide__pagination__page.is-active {
+  background: #efae63;
+  opacity: 1;
+}
+.atr-verao-atarde .splide__pagination {
+}
+.atr-verao-atarde .splide__arrows {
+  display: none;
 }
 /* ---------------topic 9-------------------- */
 #topic9,
@@ -1599,15 +1632,28 @@ hr {
   flex-direction: column;
   height: 100%;
 }
+.atr-cinesite-wrapper .splide__arrow--next {
+  right: 0;
+}
+.atr-cinesite-wrapper .splide__arrow--prev {
+  left: 0;
+}
+.atr-cinesite-wrapper .splide__arrow {
+  background: transparent;
+}
+.atr-cinesite-wrapper .splide__pagination__page {
+  display: none;
+}
 .atr-cinesite-logo {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .atr-cinesite-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100%;
 }
 .chevron {
@@ -1672,6 +1718,21 @@ hr {
   color: #343434;
 }
 /* -------------topic 21, 31 32 33 34 35----------------- */
+.box-alta {
+  grid-row: span 2;
+}
+.box-alta1 {
+  background-color: grey;
+}
+.box-alta2 {
+  background-color: #265a92;
+}
+.box-alta .splide__track {
+  height: 100%;
+  border-radius: 20px;
+}
+#boxalta1 {
+}
 
 #topic21,
 #topic31,
@@ -1940,7 +2001,9 @@ hr {
   align-items: center;
   grid-column: span 2;
   grid-row: span 2;
-  justify-content: space-between;
+}
+.slide-colunistas {
+  width: 100%;
 }
 #topic30 h2 {
   font-size: 16px;
@@ -1958,7 +2021,25 @@ hr {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 300px;
 }
+.atr-colunistas .splide {
+  width: 100%;
+}
+.atr-colunistas .splide__arrow {
+  background: transparent;
+  top: 100%;
+}
+.atr-colunistas .splide__arrow svg {
+  fill: #3e88d7;
+}
+.atr-colunistas .splide__arrow--next {
+  left: 240px;
+}
+.atr-colunistas .splide__arrow--prev {
+  left: 202px;
+}
+
 .atr-colunistas-perfil a {
   width: 220px;
   display: flex;
