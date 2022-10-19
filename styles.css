@@ -1720,18 +1720,122 @@ hr {
 /* -------------topic 21, 31 32 33 34 35----------------- */
 .box-alta {
   grid-row: span 2;
-}
-.box-alta1 {
-  background-color: grey;
-}
-.box-alta2 {
-  background-color: #265a92;
+  grid-column: span 1;
+  border-radius: 20px;
+  max-width: 224px;
+  position: relative;
 }
 .box-alta .splide__track {
   height: 100%;
   border-radius: 20px;
 }
-#boxalta1 {
+.boz-alta .splide__list {
+  height: 100%;
+}
+.box-alta-1,
+.box-alta-2,
+.box-alta-3,
+.box-alta-4,
+.box-alta-5,
+.box-alta-6,
+.box-alta-7,
+.box-alta-8,
+.box-alta-9 {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+.box-alta-1 {
+  background-image: url("./assets/public/images/boxAlta4.png");
+}
+.box-alta-2 {
+  background-image: url("./assets/public/images/boxAlta1.png");
+}
+.box-alta-3 {
+  background-image: url("./assets/public/images/boxAlta3.png");
+}
+.box-alta-4 {
+  background-image: url("./assets/public/images/boxAlta4.png");
+}
+.box-alta-5 {
+  background-image: url("./assets/public/images/boxAlta5.png");
+}
+.box-alta-6 {
+  background-image: url("./assets/public/images/boxAlta6.png");
+}
+.box-alta-7 {
+  background-image: url("./assets/public/images/boxAlta7.png");
+}
+.box-alta-8 {
+  background-image: url("./assets/public/images/boxAlta8.png");
+}
+.box-alta-9 {
+  background-image: url("./assets/public/images/boxAlta9.png");
+}
+.box-alta .splide__pagination__page {
+  border: none;
+  width: 70px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #ffffff70;
+}
+.box-alta .splide__pagination__page.is-active {
+  border: none;
+  width: 70px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #ffffff70;
+}
+.box-alta .splide__pagination__page.is-active {
+  background-color: #3e88d790;
+  transform: none;
+}
+
+.box-alta article {
+  height: 100%;
+}
+.box-alta a {
+  position: absolute;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.box-alta a:focus {
+  text-decoration: none;
+}
+.box-alta a div {
+  padding: 20px;
+}
+.box-alta a div:nth-child(2) {
+  padding-bottom: 30px;
+}
+.box-alta .splide__arrow {
+  display: none;
+}
+.box-alta h2 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+.box-alta a::after {
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, #000, transparent);
+  content: "";
+  border-radius: 0 0 20px 20px;
 }
 
 #topic21,
@@ -2133,7 +2237,7 @@ hr {
 
 /* -------------topic 41----------------- */
 #topic41 {
-  background-image: url("./assets/public/images/boxAlta3.png");
+  background-image: url("./assets/public/images/boxAlta4.png");
 }
 
 /* -------------topic 42----------------- */
