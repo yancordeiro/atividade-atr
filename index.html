@@ -7,20 +7,12 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
-    /> -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
     />
 
-    <!-- <script
-      type="text/javascript"
-      src="./node_modules/@splidejs/splide/dist/js/splide.min.js"
-    ></script> -->
     <script src="./script.js" type="module"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -120,11 +112,7 @@
     </header>
     <main class="atr-main">
       <section class="bloco1">
-        <article class="topic" id="topic1">
-          <!-- <figure>
-            <img src="./assets/public/images/propa1.png" alt="ads image" />
-          </figure> -->
-        </article>
+        <article class="topic" id="topic1"></article>
         <article class="topic" id="topic2">
           <a href="#" class="topic-2-wrapper">
             <h3 class="atr-chapeu-escuro">educação</h3>
@@ -133,7 +121,6 @@
             </h2>
           </a>
         </article>
-        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
         <section class="topic" id="topic100">
           <div class="splide big-carousel">
             <div class="splide__slider big-carousel">
@@ -173,20 +160,6 @@
           </div>
         </section>
 
-        <!-- <script type="text/javascript">
-          new Splide(".splide", {
-            type: "loop",
-            autoplay: true,
-            arrows: false,
-            interval: 3000,
-          }).mount();
-          new Splide(".splide", {
-            classes: {
-              pagination: "splide__pagination pagination-nonactive-button",
-            },
-          });
-        </script> -->
-        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
         <article class="topic" id="topic4">
           <a href="#">
             <h3 class="atr-chapeu-azul">interferência</h3>
@@ -201,7 +174,6 @@
             <h2 class="small-subtitle-white">
               Assembleia Legislativa instala comissões permanentes
             </h2>
-            <!-- <div class="background-shade-effect"></div> -->
           </a>
         </article>
         <article class="topic" id="topic6">
@@ -227,37 +199,9 @@
             <h2 class="small-subtitle-white">
               Arthur Aguiar pensou em tirar a vida após as 16 traições
             </h2>
-            <!-- <div class="background-shade-effect"></div> -->
           </a>
         </article>
-        <!-- <article class="topic" id="topic8">
-          <div class="topic-8-wrapper">
-            <div class="mega-title">
-              <h2>mega-sena</h2>
-              <time pubdate>08/02/2022</time>
-            </div>
-            <div class="mega-results">
-              <ul>
-                <li>7</li>
-                <li>14</li>
-                <li>21</li>
-                <li>28</li>
-                <li>35</li>
-                <li>42</li>
-              </ul>
-            </div>
-            <div class="mega-value">
-              <span>Valor estimado em: R$6.000,000,00</span>
-              <ul>
-                <li><button id="active-button"></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </div>
-        </article> -->
+
         <article class="topic" id="topic8">
           <section class="splide topic-mega">
             <div class="splide__track topic-mega">
@@ -443,7 +387,10 @@
             </figure>
           </article>
 
-          <section class="splide" aria-label="Splide Basic HTML Example">
+          <section
+            class="splide atr-verao-desktop"
+            aria-label="Splide Basic HTML Example"
+          >
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
@@ -551,60 +498,63 @@
               </ul>
             </div>
           </section>
-
-          <!-- <div class="atr-verao-wrapper">
-            <article>
-              <a href="#">
-                <h2 class="small-subtitle-white">
-                  'Paseo Som Set' recebe Arthur Ramos e Confraria da Música
-                </h2>
-              </a>
-            </article>
-            <article>
-              <a href="#">
-                <h2 class="small-subtitle-white">
-                  Bailinho de Quinta faz show intimista no Rio Vermelho no
-                  domingo
-                </h2>
-              </a>
-            </article>
-            <article>
-              <a href="#">
-                <h2 class="small-subtitle-white">
-                  Xamã é confirmado no "Carnazord" em Guaraju ba
-                </h2>
-              </a>
-            </article>
-            <article>
-              <a href="#">
-                <h2 class="small-subtitle-white">
-                  Rafa Pondé revisita obra em show na Varanda do Sesi
-                </h2>
-              </a>
-            </article>
-          </div> -->
-          <!-- <div class="atr-verao-buttons">
-            <ul>
-              <li><button id="atr-verao-active-button"></button></li>
-              <li><button></button></li>
-              <li><button></button></li>
-            </ul>
-          </div> -->
+          <section
+            class="splide atr-verao-mobile"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="atr-verao-wrapper">
+                    <article class="mobile1">
+                      <a href="#">
+                        <h2 class="small-subtitle-white">
+                          'Paseo Som Set' recebe Arthur Ramos e Confraria da
+                          Música
+                        </h2>
+                      </a>
+                    </article>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="atr-verao-wrapper">
+                    <article class="mobile2">
+                      <a href="#">
+                        <h2 class="small-subtitle-white">
+                          Bailinho de Quinta faz show intimista no Rio Vermelho
+                          no domingo
+                        </h2>
+                      </a>
+                    </article>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="atr-verao-wrapper">
+                    <article class="mobile3">
+                      <a href="#">
+                        <h2 class="small-subtitle-white">
+                          Xamã é confirmado no "Carnazord" em Guaraju ba
+                        </h2>
+                      </a>
+                    </article>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="atr-verao-wrapper">
+                    <article class="mobile4">
+                      <a href="#">
+                        <h2 class="small-subtitle-white">
+                          Rafa Pondé revisita obra em show na Varanda do Sesi
+                        </h2>
+                      </a>
+                    </article>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
         </section>
 
-        <!-- <article class="topic" id="topic9">
-          <a href="#" class="topic-9-wrapper">
-            <h3 class="atr-chapeu-escuro">boletim</h3>
-            <h2 class="big-subtitle-white">
-              Brasil registra 178.814 casos e 1.264 mortes por Covid-19 em 24h
-            </h2>
-            <ul class="pagination">
-              <li><button class="pagination-active-button"></button></li>
-              <li><button class="pagination-nonactive-button"></button></li>
-              <li><button class="pagination-nonactive-button"></button></li>
-            </ul>
-          </a> 
-        </article>-->
         <section class="topic" id="topic100">
           <div class="splide big-carousel">
             <div class="splide__slider big-carousel">
@@ -839,84 +789,27 @@
                 <ul class="splide__list">
                   <li class="splide__slide">
                     <div class="atr-cinesite-content">
-                      <!-- <figure>
-                        <img
-                          class="chevron"
-                          src="./assets/public/images/chevron-left-solid.svg"
-                          alt="chevron left"
-                        />
-                      </figure> -->
-
-                      <div class="atr-estreia-1">
+                      <a href="#" class="atr-estreia-1">
                         <h2 class="atr-chapeu-azul">estréia</h2>
-                      </div>
-                      <div class="atr-estreia-2">
+                      </a>
+                      <a href="#" class="atr-estreia-2">
                         <h2 class="atr-chapeu-azul">estréia</h2>
-                      </div>
-
-                      <!-- <figure>
-                        <img
-                          class="chevron"
-                          src="./assets/public/images/chevron-right-solid.svg"
-                          alt="chevron right"
-                        />
-                      </figure> -->
+                      </a>
                     </div>
                   </li>
                   <li class="splide__slide">
                     <div class="atr-cinesite-content">
-                      <!-- <figure>
-                        <img
-                          class="chevron"
-                          src="./assets/public/images/chevron-left-solid.svg"
-                          alt="chevron left"
-                        />
-                      </figure> -->
-
-                      <div class="atr-estreia-1">
+                      <a href="#" class="atr-estreia-1">
                         <h2 class="atr-chapeu-azul">estréia</h2>
-                      </div>
-                      <div class="atr-estreia-2">
+                      </a>
+                      <a href="#" class="atr-estreia-2">
                         <h2 class="atr-chapeu-azul">estréia</h2>
-                      </div>
-
-                      <!-- <figure>
-                        <img
-                          class="chevron"
-                          src="./assets/public/images/chevron-right-solid.svg"
-                          alt="chevron right"
-                        />
-                      </figure> -->
+                      </a>
                     </div>
                   </li>
                 </ul>
               </div>
             </section>
-
-            <!-- <div class="atr-cinesite-content">
-              <figure>
-                <img
-                  class="chevron"
-                  src="./assets/public/images/chevron-left-solid.svg"
-                  alt="chevron left"
-                />
-              </figure>
-
-              <div class="atr-estreia-1">
-                <h2 class="atr-chapeu-azul">estréia</h2>
-              </div>
-              <div class="atr-estreia-2">
-                <h2 class="atr-chapeu-azul">estréia</h2>
-              </div>
-
-              <figure>
-                <img
-                  class="chevron"
-                  src="./assets/public/images/chevron-right-solid.svg"
-                  alt="chevron right"
-                />
-              </figure>
-            </div> -->
           </div>
         </article>
         <article class="topic" id="topic18">
@@ -1004,19 +897,6 @@
           </div>
         </article>
 
-        <!-- <article class="topic" id="topic21">
-          <a href="#" class="topic-21-wrapper">
-            <h3 class="atr-chapeu-escuro">caso de maus tratos</h3>
-            <div class="topic-21-content">
-              <h2>Adidas rompe contrato com zagueiro Kurt Zouma</h2>
-              <ul>
-                <li><button id="is-active-button"></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </a>
-        </article> -->
-
         <section class="splide box-alta" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
             <ul class="splide__list">
@@ -1059,11 +939,7 @@
           </a>
         </article>
         <article class="topic" id="topic23">
-          <a href="#">
-            <!-- <figure>
-              <img src="./assets/public/images/propa4.png" alt="ads4" />
-            </figure> -->
-          </a>
+          <a href="#"> </a>
         </article>
 
         <section class="topic" id="topic100">
@@ -1110,7 +986,6 @@
             <h2 class="small-subtitle-white">
               Jovem Pan demite Adrilles Jorge após suposta saudação nazista
             </h2>
-            <!-- <div class="background-shade-effect"></div> -->
           </a>
         </article>
         <article class="topic" id="topic26">
@@ -1119,7 +994,6 @@
             <h2 class="small-subtitle-white">
               Prefeitura de Conquista proíbe serviço de mototáxi
             </h2>
-            <!-- <div class="background-shade-effect"></div> -->
           </a>
         </article>
         <article class="topic" id="topic27">
@@ -1208,35 +1082,6 @@
               </ul>
             </div>
           </section>
-
-          <!-- <div class="atr-colunistas-perfil">
-            <a href="#">
-              <figure>
-                <img src="./assets/public/images/coluna1.png" alt="colunista" />
-              </figure>
-              <span>made in bahia</span>
-            </a>
-            <a href="#">
-              <figure>
-                <img src="./assets/public/images/coluna2.png" alt="colunista" />
-              </figure>
-              <span>conjuntura política</span>
-            </a>
-          </div> -->
-          <!-- <div class="arrows">
-            <figure>
-              <img
-                src="./assets/public/images/chevron-left-blue.svg"
-                alt="chevron left"
-              />
-            </figure>
-            <figure>
-              <img
-                src="./assets/public/images/chevron-right-blue.svg"
-                alt="chevron left"
-              />
-            </figure>
-          </div> -->
         </article>
         <article class="topic" id="topic16">
           <a href="#">
@@ -1343,22 +1188,6 @@
           </div>
         </section>
 
-        <!-- <article class="topic" id="topic31">
-          <a href="#" class="topic-31-wrapper">
-            <h3 class="atr-chapeu-escuro">VALOR DA PASSAGEM DE ÔNIBUS</h3>
-
-            <div class="topic-31-content">
-              <h2>
-                Bruno espera subsídio federal até dia 15 para evitar reajuste
-              </h2>
-              <ul>
-                <li><button id="is-active-button"></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </a>
-        </article> -->
-
         <section class="splide box-alta" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
             <ul class="splide__list">
@@ -1396,22 +1225,6 @@
           </div>
         </section>
 
-        <!-- <article class="topic" id="topic32">
-          <a href="#" class="topic-32-wrapper">
-            <h3 class="atr-chapeu-escuro">greve</h3>
-
-            <div class="topic-32-content">
-              <h2>
-                Médicos denunciam prefeitura de Jacobina por salários atrasados
-              </h2>
-              <ul>
-                <li><button id="is-active-button"></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </a>
-        </article> -->
-
         <section class="splide box-alta" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
             <ul class="splide__list">
@@ -1447,22 +1260,6 @@
             </ul>
           </div>
         </section>
-
-        <!-- <article class="topic" id="topic33">
-          <a href="#" class="topic-33-wrapper">
-            <h3 class="atr-chapeu-escuro">DEPUTADO NA BERLINDA</h3>
-
-            <div class="topic-33-content">
-              <h2>
-                Grupos pedem saída de Kim Kataguri após fala sobre nazismo
-              </h2>
-              <ul>
-                <li><button id="is-active-button"></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </a>
-        </article> -->
 
         <section class="splide box-alta" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
@@ -1500,22 +1297,6 @@
             </ul>
           </div>
         </section>
-
-        <!-- <article class="topic" id="topic34">
-          <a href="#" class="topic-34-wrapper">
-            <h3 class="atr-chapeu-escuro">CONTRÁRIO</h3>
-
-            <div class="topic-34-content">
-              <h2>
-                Uso de cloroquina contra Covid não deve ser considerado, diz MPF
-              </h2>
-              <ul>
-                <li><button id="is-active-button"></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </a>
-        </article> -->
 
         <section class="splide box-alta" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
@@ -1555,19 +1336,6 @@
           </div>
         </section>
 
-        <!-- <article class="topic" id="topic35">
-          <a href="#" class="topic-35-wrapper">
-            <h3 class="atr-chapeu-escuro">POLÍTICA</h3>
-
-            <div class="topic-35-content">
-              <h2>Em viagem ao nordeste, Bolsonaro ataca governos petistas</h2>
-              <ul>
-                <li><button id="is-active-button"></button></li>
-                <li><button></button></li>
-              </ul>
-            </div>
-          </a>
-        </article> -->
         <article class="topic" id="topic13">
           <a href="#">
             <figure>
@@ -1743,17 +1511,14 @@
             <h2 class="small-subtitle-white">
               Resultado do enem já disponível para consulta; confira a nota
             </h2>
-            <!-- <div class="background-shade-effect"></div> -->
           </a>
         </article>
-
         <article class="topic" id="topic41">
           <a href="#" class="topic-41-wrapper">
             <h3 class="atr-chapeu-escuro">educação</h3>
             <h2 class="small-subtitle-white">
               Resultado do enem já disponível para consulta; confira a nota
             </h2>
-            <!-- <div class="background-shade-effect"></div> -->
           </a>
         </article>
 
@@ -1902,11 +1667,7 @@
           </a>
         </article>
         <article class="topic" id="topic23">
-          <a href="#">
-            <!-- <figure>
-              <img src="./assets/public/images/propa4.png" alt="ads4" />
-            </figure> -->
-          </a>
+          <a href="#"> </a>
         </article>
       </section>
     </main>

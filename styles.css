@@ -1283,6 +1283,25 @@ hr {
   grid-column: span 5;
   grid-row: span 2;
   margin-top: 30px;
+  height: 350px;
+  max-height: 100%;
+}
+.atr-verao-mobile {
+  display: none;
+}
+.mobile1 {
+}
+.mobile2 {
+  background-image: url("./assets/public/images/atardeverão-1.png") !important;
+  border-radius: 20px;
+}
+.mobile3 {
+  background-image: url("./assets/public/images/atardeverão-2.png") !important;
+  border-radius: 20px;
+}
+.mobile4 {
+  background-image: url("./assets/public/images/atardeverão-3.png") !important;
+  border-radius: 20px;
 }
 .atr-verao-atarde a {
   text-decoration: none;
@@ -1331,6 +1350,8 @@ hr {
 .atr-verao-wrapper > article:nth-child(1) {
   background-image: url("./assets/public/images/atardeverão.png");
   border-radius: 20px;
+  background-size: cover;
+  background-position: center;
 }
 .atr-verao-wrapper > article:nth-child(2) {
   background-image: url("./assets/public/images/atardeverão-1.png");
@@ -2147,6 +2168,9 @@ hr {
 .atr-colunistas .splide__arrow--prev {
   left: 202px;
 }
+.atr-colunistas .splide__pagination {
+  display: none;
+}
 
 .atr-colunistas-perfil a {
   width: 220px;
@@ -2609,23 +2633,33 @@ hr {
   .divider {
     display: none;
   }
+  /* ------------------ verao atarde ---------------*/
   .atr-verao-atarde {
     display: flex;
     flex-direction: column;
   }
-  .atr-verao-atarde div {
+  /* .atr-verao-atarde section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow: auto;
-  }
-  .atr-verao-atarde div article {
-    margin-top: 10px;
-    width: 244px;
-    max-width: 100%;
-  }
-  .atr-verao-atarde ul {
+  } */
+  .atr-verao-desktop {
     display: none;
   }
+  .atr-verao-mobile {
+    display: block;
+  }
+  .atr-verao-atarde .splide__list {
+    transform: none;
+    display: flex;
+  }
+  .atr-verao-atarde section article {
+    width: 335px;
+    max-width: 100%;
+  }
+  /* .atr-verao-atarde ul {
+    display: none;
+  } */
   #topic9,
   #topic24 {
     height: 289px;
@@ -2678,6 +2712,12 @@ hr {
   #topic12 {
     gap: 10px;
   }
+  #topic17 {
+    margin-bottom: 20px;
+  }
+  .atr-cinesite-wrapper .splide__arrow {
+    background: #ccc;
+  }
 
   .atr-cinesite-content {
     justify-content: flex-start;
@@ -2714,6 +2754,22 @@ hr {
   }
   .atr-colunistas-perfil div {
     width: 157px;
+  }
+  .atr-colunistas .splide__arrow {
+    background: transparent;
+    top: 90%;
+  }
+  .atr-colunistas .splide__arrow--next {
+    left: 170px;
+  }
+  .atr-colunistas .splide__arrow--prev {
+    left: 140px;
+  }
+  .box-alta {
+    height: 314px;
+    width: 335px;
+    max-width: 100%;
+    max-height: 100%;
   }
   #topic31,
   #topic32,
